@@ -1,0 +1,29 @@
+{
+  "name": "ramadevi",
+  "authors": [
+    "ramadevikatakamsetti <ishwaryanidhik12@gmail.com>"
+  ],
+  "description": "routing programming",
+  "main": "routing",
+  "keywords": [
+    "12345"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ramadevikatakamsetti/AngularApp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "angular-ui-router": "^0.3.2",
+    "angular": "^1.5.8",
+    "angular-local-storage": "^0.5.2",
+    "angular-messages": "^1.5.8"
+  },
+  "private": true
+}

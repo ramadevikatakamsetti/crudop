@@ -1,0 +1,28 @@
+
+<br><br><br><br>
+
+<h1> Employee Details</h1>
+
+  <table class="table table-striped">
+        <tr>
+            <td>S.No</td>
+            <td>First Name</td>
+            <td> Last Name</td>
+            <td> Age</td>
+            <td> Phone Number</td>
+      </tr>       
+              
+       
+        <tr ng-repeat="data in employees ">
+            <td>{{$index+1}}</td>
+            <td>{{data.firstName}}</td>
+            <td>{{data.lastName}}</td>
+            <td>{{data.age}}</td>
+            <td>{{data.phone}}</td>
+            
+            <td><button class="btn btn-primary" >Edit</button> </td>
+            
+        </tr>
+        
+    
+    </table>

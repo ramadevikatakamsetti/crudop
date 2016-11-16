@@ -1,0 +1,63 @@
+<br><br><br><br>
+
+<h1>Registration Form</h1>
+<form class="form-horizontal" name="form">
+<div>
+    <div class="form-group" ng-class="{ 'has-error' : form.firstName.$invalid && form.firstName.$dirty }">
+        <label class="control-label col-xs-2" >First Name</label>
+        <div class="col-xs-4">
+            
+            <input type="text" class="form-control"  name="firstName"
+                   placeholder=" Enter First Name" ng-model="user.firstName" required/>
+         
+        </div>
+        
+        <span class="help-block has-error"
+                           ng-if="form.firstName.$dirty"
+                           ng-messages="form.firstName.$error">
+                             <span ng-message="required">
+                                  EmployeeId is required
+                              </span>
+                     </span>
+        
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">Last Name</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name=lastName placeholder="Enter Last Name" ng-model="user.lastName">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">Age</label>
+        <div class="col-xs-4">
+            <input type="text" name=age class="form-control" placeholder="Enter Age" ng-model="user.age">
+        </div>
+    </div>
+  
+    
+    <div class="form-group">
+        <label class="control-label col-xs-2">PhoneNumber</label>
+        <div class="col-xs-4">
+            <input type="number" name=phone placeholder="Phone Number" class="form-control" ng-model="user.phone">
+
+        </div>
+    </div>
+
+   
+    
+ 
+    <div class="form-group">
+
+        <div class="col-xs-offset-2 col-xs-4">
+            <input type="checkbox" ng-model="user.agree">I agree Terms
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-4">
+            <button ng-click="save()" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+    {{user}}
+</div>
+</form>
